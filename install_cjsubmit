@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo chmod +x CJSubmit.py
-sudo cp CJSubmit.py /bin/local/usr/cjsubmit
+sudo cp CJSubmit.py /usr/local/bin/cjsubmit
 echo "CJSubmit installed."
 echo "Usage instructions: "
 echo "$ cjsubmit [filename problemname] [-u userID] [-p password] [-ip ServerIPAddress] [-pt ServerPort]"
