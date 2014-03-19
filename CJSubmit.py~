@@ -120,7 +120,7 @@ class CJSubmitter():
 		# Send a line of input
 		num = len(line)
 		self.connection.sendall(bytearray(struct.pack('<I',num)))
-		self.connection.sendall(bytearray(line))
+		self.connection.sendall(bytearray(line.strip()))
 	def sendfile(self, filename):
 		contents = ''
 		with open(filename) as f:
